@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+    .hide-scrollbar {
+      scrollbar-width: none; /* Firefox */
+    }
+  
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Edge */
+    }
+  </style>
+  
+</head>
+<body class="bg-black text-white">
+ <div class=" flex  ">
+          <!-- left-sidebar start -->
+    <div class=" first  flex flex-col items-center w-[100px]  md:w-[250px] lg:w-auto [@media(max-width:370px)]:hidden">
+      <!-- logo add -->
+       <div class="logo mt-1 lg:mt-3 [@media(width:1024px)]:mt-0">
+        <img src="images/logo.png" alt="Logo" class="w-10 cursor-pointer">
+       </div> 
+       <div class="sidebar w-full">
+
+           <!-- sidebar-menu -->
+        <ul class=" pl-5 pr-3 md:pl-12 lg:pl-28 md:pr-8 lg:pr-8 text-lg lg:text-xl space-y-2 lg:mt-5 flex flex-col  my-8 cursor-pointer [@media(width:1024px)]:space-y-0 [@media(width:1024px)]:my-1 [@media(width:1024px)]:text-lg">
+           <li class="flex items-center gap-4 justify-center md:justify-start  p-1.5 px-3 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+           hover:w-auto "><i class="fa-solid fa-house text-xl "></i> <span class=" hidden  md:block"> Home </span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-solid fa-magnifying-glass text-xl"></i> <span class=" hidden  md:block"> Explore</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-regular fa-bell text-xl"></i> <span class=" hidden  md:block"> Notification</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-regular fa-envelope text-xl"></i> <span class=" hidden  md:block"> Messages</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-regular fa-envelope text-xl"></i> <span class=" hidden  md:block"> Grok</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-regular fa-rectangle-list text-xl"></i> <span class=" hidden  md:block"> Lists</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-regular fa-bookmark text-xl"></i> <span class=" hidden  md:block"> Bookmarks</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-3 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-solid fa-user-group text-lg"></i> <span class=" hidden  md:block">Communities</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+            "><i class="fa-brands fa-x-twitter text-xl"></i> <span class=" hidden  md:block"> Premium</span></li>
+           <li class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+             "><i class="fa-regular fa-user text-xl" ></i> <span class=" hidden  md:block"> Profile</span></li>
+           <li  class="flex items-center justify-center md:justify-start p-1.5 px-3 gap-4 hover:bg-[rgba(255,255,255,.1)] hover:rounded-full 
+           "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none" class="invert">
+    <path d="M11.9959 12H12.0049" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M15.9998 12H16.0088" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M7.99981 12H8.00879" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="currentColor" stroke-width="1.5" />
+</svg> <span class=" hidden  md:block"> More</span></li>
+
+    <!-- post button -->
+<div class=" post-btn flex justify-center mt-1">
+   <button class="bg-blue-400 hover:bg-blue-500  border-none cursor-pointer outline-none text-white  px-2 md:p-2 w-full md:px-6 text-lg md:text-xl rounded-full hidden md:block ">Post</button>
+
+   <button class="bg-blue-400 hover:bg-blue-500  border-none cursor-pointer outline-none text-white  px-3 py-2  text-xl font-bold rounded-full sm:block md:hidden"><i class="fa-solid fa-pencil"></i></button>
+
+</div>
+</div>
+         <!-- user profile section -->
+<div class="flex justify-between sm:mt-0 md:mt-3 lg:w-[80%] md:pr-2 md:pb-2 lg:ml-7 hover:bg-[rgba(255,255,255,.1)]  px-1 rounded-lg lg:mt-5 [@media(width:1024px)]:mt-1">
+  <div class="flex gap-4">
+   <div class="profile w-10 h-10 lg:w-12 lg:h-12 rounded-full">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pfDrPiOJZcHv_wQ-9t4TmzAtxgn4gpoJRg&s" alt="profile-img" class="rounded-full w-full h-full cursor-pointer   m-2">
+   </div>
+   <div class="hidden md:block  ">
+    <div class="username flex flex-col mt-1.5 ">
+      <span class="hover:underline cursor-pointer ">Saira Ashraf</span>
+      <span class="text-stone-400 cursor-pointer">sairaashraf098</span>
+  </div>
+  
+ </div>
+ <div class="mt-2 lg:pl-8 hidden md:block">
+  <span class="cursor-pointer hover:text-blue-400 hover:bg-cyan-950 p-2 rounded-full py-1.5">•••</span>
+ </div>
+   </div>
+ </div>
+      </ul>
+
+    </div>
+     
+    <!-- main-section -->
+
+    <div class=" second w-full md:w-[60vw] lg:w-full overflow-x-hidden z-30   border border-x-stone-800 border-y-0  max-h-[100vh] hide-scrollbar overflow-y-scroll scroll-hidden">
+      <div class="top flex sticky top-0  bg-black backdrop-blur-3xl opacity-90 border-[1px] border-b-stone-800 border-x-0 border-t-0">
+        <!-- menubar -->
+         <div class=" menubar item-center justify-center py-4 pl-2  [@media(max-width:300px)]:text-xs hidden  [@media(max-width:370px)]:block ">
+          <i class="fa-solid fa-bars"></i>
+         </div>
+              
+         <!-- top-section of second part -->
+
+        <div class="left w-1/2 flex justify-center items-center font-medium text-lg hover:bg-[rgba(255,255,255,.1)] cursor-pointer   "><span class="border border-b-4  border-blue-400 border-x-0 border-t-0 rounded-b-sm pb-3 pt-3  [@media(max-width:300px)]:text-xs ">For You</span></div>
+        <div class="right w-1/2 flex justify-center items-center font-medium text-lg hover:bg-[rgba(255,255,255,.1)] hover:text-white  text-stone-400 cursor-pointer"><span class="pb-3 pt-3 [@media(max-width:300px)]:text-xs ">Following</span></div>
+        <div class="settings px-3 hover:bg-[rgba(255,255,255,.1)] flex justify-center items-center [@media(max-width:300px)]:hidden"><i class="fa-solid fa-gear cursor-pointer pb-3 pt-3"></i></div>
+      </div>
+      <!-- whats happening? section -->
+      <div class="whats mt-2">
+        <div class="profile rounded-full w-10 h-10 md:w-12 md:h-12 flex  gap-1.5 ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pfDrPiOJZcHv_wQ-9t4TmzAtxgn4gpoJRg&s" alt="" class="rounded-full w-full h-full  m-2 cursor-pointer [@media(max-width:300px)]:hidden">
+          <div class="input mt-3 flex flex-col gap-5">
+            <input type="text" placeholder="Whats is happening?!" size="40"  class="text-xl border-none outline-none font-light [@media(max-width:300px)]:ml-3 [@media(max-width:300px)]:text-lg">
+            <div class="text-blue-400 flex items-center gap-1 px-3 hover:bg-cyan-950 w-44 rounded-4xl  "> <i class="fa-solid fa-earth-asia text-sm "></i><p class=" cursor-pointer [@media(max-width:300px)]:text-xs">Everyone can reply</p></div>
+          </div>
+        </div>
+        <h1 class="bg-stone-700 h-[1px] w-[85%] mt-12 md:mt-10 ml-14 "></h1>
+        <!-- blue icons -->
+        <div class="flex justify-between items-center w-full">
+        <div class="text-blue-400 flex pl-10 lg:gap-1 md:pl-14 lg:pl-10  h-12 items-center text-base [@media(max-width:300px)]:pl-2 [@media(max-width:300px)]:text-xs">
+          <div class="hover:bg-cyan-950  rounded-full p-1.5 md:p-2  flex item-center justify-center cursor-pointer"><i class="fa-solid fa-image"></i></div>
+          <div class="hover:bg-cyan-950  rounded-full p-1.5 md:p-2  flex item-center justify-center cursor-pointer [@media(max-width:300px)]:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"  fill="none" >
+              <path d="M6.66667 19.5H8V21C8 21.5523 7.55228 22 7 22H5C4.44772 22 4 21.5523 4 21V17C4 16.4477 4.44772 16 5 16H7C7.55228 16 8 16.4477 8 17M11 16H12.5M12.5 16H14M12.5 16V22M11 22H12.5M12.5 22H14M20 16H18C17.4477 16 17 16.4477 17 17V19M17 19V22M17 19H19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20 13V10.6569C20 9.83935 20 9.4306 19.8478 9.06306C19.6955 8.69552 19.4065 8.40649 18.8284 7.82843L14.0919 3.09188C13.593 2.593 13.3436 2.34355 13.0345 2.19575C12.9702 2.165 12.9044 2.13772 12.8372 2.11401C12.5141 2 12.1614 2 11.4558 2C8.21082 2 6.58831 2 5.48933 2.88607C5.26731 3.06508 5.06508 3.26731 4.88607 3.48933C4 4.58831 4 6.21082 4 9.45584V13M13 2.5V3C13 5.82843 13 7.24264 13.8787 8.12132C14.7574 9 16.1716 9 19 9H19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          </div>
+         <div class="hover:bg-cyan-950  rounded-full p-1.5 md:p-2  flex item-center justify-center cursor-pointer"> <i class="fa-solid fa-bars-progress"></i></div>
+         <div class="hover:bg-cyan-950  rounded-full p-1.5 md:p-2  flex item-center justify-center cursor-pointer"> <i class="fa-regular fa-face-smile"></i></div>
+         <div class="hover:bg-cyan-950  rounded-full p-1.5 md:p-2   item-center justify-center cursor-pointer hidden md:block"> <i class="fa-regular fa-calendar"></i></div>
+          <div class="hover:bg-cyan-950  rounded-full p-1.5 md:p-2 px-2.5 flex item-center justify-center"><i class="fa-solid fa-location-dot opacity-65"></i></div>
+        </div>
+          <div>
+            <button class="bg-amber-50 text-black px-3 opacity-55 mr-5 py-0.5 rounded-4xl text-lg font-medium [@media(max-width:300px)]:text-base">Post</button>
+          </div>
+        </div>
+        <h1 class="bg-stone-700 h-[1px] w-full "></h1>
+        <div class="text-blue-400  h-12 flex items-center justify-center hover:bg-[rgba(255,255,255,.1)] cursor-pointer">Show 147 posts</div>
+        <h1 class="bg-stone-700 h-[1px] w-full "></h1>
+         <!-- posts section -->
+        <div class="posts mt-5    ">
+          <!-- post1 -->
+          <div class="post flex m-4 gap-2 ">
+            <!-- post user profile -->
+            <div class="img w-12 h-12 rounded-full border-2 border-t-pink-500 border-r-pink-500 border-l-orange-500 border-b-orange-500  flex items-center justify-center [@media(max-width:300px)]:w-8 [@media(max-width:300px)]:h-8">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssUN2crJsUJMQrSmKAP5wMFAJ1GKCKJpDOg&s" alt="" class="rounded-full w-full h-full  m-8 cursor-pointer">
+            </div>
+            <div class="content mt-2 flex flex-col justify-end [@media(max-width:300px)]:mt-0">
+              <!-- post content -->
+              <div>
+              
+                <span class="hover:underline cursor-pointer" >startuppakistansp</span>
+                <span class="text-stone-400">• 5h</span>
+             
+              </div>
+              <!-- post -->
+              <div class="border mt-2 rounded-lg border-stone-500 cursor-pointer lg:w-full ">
+                <img src="images/post-profile/post1/post.jpg" alt="" class=" lg:w-full rounded-lg" >
+              </div>
+                 
+              <!-- post bottom icons -->
+
+               <div class="flex text-stone-400 items-center justify-around   mt-2 lg:w-full ">
+                    
+                      <div class="cursor-pointer  text-lg flex items-center gap-1 md:text-lg hover:text-blue-500 hover:bg-gray-800 rounded-4xl py-1 px-2 [@media(max-width:300px)]:text-xs">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span class="hidden md:block">53K</span>
+                      </div>
+                      <div class="cursor-pointer  text-lg md:text-lg hover:text-green-500 hover:bg-gray-800 rounded-4xl py-0.5 px-2 [@media(max-width:300px)]:text-xs">
+                        <i class="fa-solid fa-repeat"></i>
+                      </div>
+                      <div class="cursor-pointer  text-lg flex items-center gap-1 md:text-lg hover:text-pink-500 hover:bg-gray-800 rounded-4xl p-1.5 [@media(max-width:300px)]:text-xs ">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="hidden md:block">1.2K</span>
+                      </div>
+                      <div class="cursor-pointer  text-lg  md:text-lg hover:text-blue-500 hover:bg-gray-800 rounded-4xl px-2 py-0.5 [@media(max-width:300px)]:text-xs ">
+                        <i class="fa-regular fa-chart-bar"></i>
+                      </div>
+               </div>
+            </div>
+          </div>
+          <h1 class="bg-stone-700 h-[1px] w-full "></h1>     
+         <!-- post2 -->
+         
+         <div class="post flex m-4 gap-2 ">
+          <!-- post user profile -->
+          <div class="img w-12 h-12 rounded-full border-2 border-t-pink-500 border-r-pink-500 border-l-orange-500 border-b-orange-500  flex items-center justify-center [@media(max-width:300px)]:w-8 [@media(max-width:300px)]:h-8">
+            <img src="images/post-profile/post1/post1.png" alt="" class="rounded-full w-full h-full  m-8 cursor-pointer">
+          </div>
+          <div class="content mt-2 flex flex-col justify-end [@media(max-width:300px)]:mt-0">
+            <!-- post content -->
+            <div>
+            
+              <span class="hover:underline cursor-pointer" >startuppakistansp</span>
+              <span class="text-stone-400">• 5h</span>
+            
+            </div>
+            <!-- post -->
+            <div class="border mt-2 rounded-lg border-stone-500 cursor-pointer lg:w-full ">
+              <img src="images/post-profile/post1/post.jpg" alt="" class=" lg:w-full rounded-lg" >
+            </div>
+            <!-- post bottom icons -->
+             <div class="flex text-stone-400 items-center justify-around   mt-2 lg:w-full ">
+                  
+                    <div class="cursor-pointer  text-lg flex items-center gap-1 md:text-lg hover:text-blue-500 hover:bg-gray-800 rounded-4xl py-1 px-2 [@media(max-width:300px)]:text-xs">
+                      <i class="fa-regular fa-comment-dots"></i>
+                      <span class="hidden md:block">53K</span>
+                    </div>
+                    <div class="cursor-pointer  text-lg md:text-lg hover:text-green-500 hover:bg-gray-800 rounded-4xl py-0.5 px-2 [@media(max-width:300px)]:text-xs">
+                      <i class="fa-solid fa-repeat"></i>
+                    </div>
+                    <div class="cursor-pointer  text-lg flex items-center gap-1 md:text-lg hover:text-pink-500 hover:bg-gray-800 rounded-4xl p-1.5 [@media(max-width:300px)]:text-xs ">
+                      <i class="fa-regular fa-heart"></i>
+                      <span class="hidden md:block">1.2K</span>
+                    </div>
+                    <div class="cursor-pointer  text-lg  md:text-lg hover:text-blue-500 hover:bg-gray-800 rounded-4xl px-2 py-0.5 [@media(max-width:300px)]:text-xs ">
+                      <i class="fa-regular fa-chart-bar"></i>
+                    </div>
+                     
+             </div>
+          </div>
+        </div>
+        <h1 class="bg-stone-700 h-[1px] w-full "></h1>  
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- right sidebar start -->
+
+    <div class=" third  ml-3 lg:mr-14  flex-col  items-center max-h-[100vh] overflow-y-scroll hide-scrollbar mt-2 space-y-3 hidden lg:block md:w-[500px] lg:w-[800px]">
+      <!-- search bar -->
+      <div class=" search bg-[rgba(255,255,255,.1)] flex gap-5  text-xl items-center text-stone-400 w-[90%] h-10 rounded-full px-5 py-2 focus-within:border focus-within:border-blue-200 focus-within:shadow-blue-300 focus-within:shadow-xs ">
+        <i class="fa-solid fa-magnifying-glass "></i>
+        <input type="text" placeholder="Search" class=" input-box outline-none border-none">
+      </div>
+     <!-- Subscribe section -->
+      <div class="bg-[rgba(255,255,255,.1)] w-[90%] px-5 py-2 rounded-2xl space-y-1.5 ">
+        <h1 class="text-lg font-bold">Subscribe to Premium </h1>
+        <p class="text-sm text-stone-200">Subscribe to unlock new features and if eligible, receive a share of ads revenue </p>
+        <button class="bg-blue-400 hover:bg-blue-500 mt-1 cursor-pointer border-none outline-none text-white py-0.5  px-4 text-lg font-medium rounded-full">Subscribe</button>
+      </div>
+
+      <!-- whats happening section -->
+
+      <div class="bg-[rgba(255,255,255,.1)] w-[90%]  py-2 rounded-2xl space-y-2">
+        <h1 class="text-xl font-bold px-5">Whats's happening </h1>
+        <div class="flex justify-between py-2 cursor-pointer px-5 hover:bg-[rgba(255,255,255,.1)]">
+            <div>
+                <h1 class="text-white font-semibold">Menswear Fashion Weeks</h1>
+                <p class="text-stone-400 text-sm">Fashion . Live</p>
+            </div>
+            <div class="w-16 rounded-xl h-14">
+                <img src="images/fashion-img.jpeg" alt="img" class="w-full rounded-xl h-14">
+            </div>
+        </div>
+      <div class="flex flex-col  ">
+        <div class="flex justify-between hover:bg-[rgba(255,255,255,.1)] cursor-pointer px-5 py-2">
+            <div>
+                <div class="text-stone-400 text-xs"> Trending in India</div>
+                <div class="font-bold text-base">#MissileAttack</div>
+                <div class="text-stone-400 text-xs"> 41.1K posts</div>
+            </div>
+            <div>•••</div>
+        </div>
+        <div class="flex justify-between hover:bg-[rgba(255,255,255,.1)] cursor-pointer px-5 py-2">
+            <div>
+                <div class="text-stone-400 text-xs"> Entertainment - Trending</div>
+                <div class="font-bold text-base">Orry</div>
+                <div class="text-stone-400 text-xs"> 3,092 posts</div>
+            </div>
+            <div>•••</div> 
+        </div>
+        <div class="flex justify-between hover:bg-[rgba(255,255,255,.1)] cursor-pointer px-5 py-2">
+            <div>
+                <div class="text-stone-400 text-xs"> Entertainment - Trending</div>
+                <div class="font-bold text-base">#RaveenaTendon</div>
+                
+            </div>
+            <div class="hover:text-blue-400 hover:bg-cyan-900 flex item-center justify-center py-0.5 pt-0.5 px-1 rounded-full">•••</div>
+        </div>
+      </div>
+        <div class="text-blue-400 hover:underline px-5 cursor-pointer hover:bg-[rgba(255,255,255,.1)] py-2">Show more</div>
+      </div>
+      <!-- who to follow section -->
+      <div class="bg-[rgba(255,255,255,.1)] w-[90%]  py-2 rounded-2xl space-y-2">
+        <h1 class="font-bold text-xl px-5">Who to follow</h1>
+        <div class="space-y-1">
+            <div class="flex justify-between items-center hover:bg-[rgba(255,255,255,.1)] px-4 py-2">
+                <div class="flex gap-2 items-center rounded-lg">
+                    <img src="images/follow-img1.jpeg" alt="" class="w-12 h-10 rounded-lg mt-2 object-cover cursor-pointer">
+               
+                    <div >
+
+                        <h3 class="font-semibold text-sm hover:underline cursor-pointer">Visit Maldives</h3>
+                        <p class="text-stone-400 text-xs">@visitmaldives</p>
+                        
+                    </div>
+                </div>
+                <div class="bg-yellow-50 text-black rounded-3xl py-1 text-sm font-medium px-3.5 hover:bg-slate-200 cursor-pointer">Follow</div>
+            </div>
+
+            <div class="flex justify-between items-center px-4 hover:bg-[rgba(255,255,255,.1)] py-2">
+                <div class="flex gap-2 items-center rounded-lg cursor-pointer">
+                    <img src="images/follow-img3.jpeg" alt="" class="w-12 h-10 rounded-lg mt-2 object-cover">
+               
+                    <div class=" lg:w-36">
+                        <h3 class="font-semibold cursor-pointer hover:underline text-sm flex flex-wrap">Coding-knowledge</h3>
+                    <p class="text-stone-400 text-xs cursor-pointer">Harry</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 text-black rounded-3xl py-1 text-sm font-medium px-3.5 cursor-pointer hover:bg-slate-200">Follow</div>
+            </div>
+
+            <div class="flex justify-between items-center hover:bg-[rgba(255,255,255,.1)] px-4 py-1">
+                <div class="flex gap-2 items-center rounded-lg cursor-pointer">
+                    <img src="images/follow-img2.jpeg" alt="" class="w-12 h-10 rounded-lg mt-2 object-cover">
+               
+                    <div >
+                        <h3 class="font-semibold text-sm cursor-pointer hover:underline ">Richa Singh</h3>
+                        <p class="text-stone-400 text-xs cursor-pointer">@richasigh123</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 text-black rounded-3xl py-1 text-sm font-medium px-3.5 cursor-pointer hover:bg-slate-200">Follow</div>
+            </div>
+        </div>
+        <div class="text-blue-400 hover:underline hover:bg-[rgba(255,255,255,.1)] px-4 py-2">Show more</div>
+      </div>
+    </div>
+ </div>
+ <script src="index.js"></script>
+</body>
+</html>
